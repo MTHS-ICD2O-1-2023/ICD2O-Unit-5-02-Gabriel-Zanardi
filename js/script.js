@@ -4,11 +4,12 @@
 // This file contains the JS functions for index.html
 
 function myButtonClicked() {
-  alwaysOnButtonChecked = document.getElementById('positive-number').checked
+  positiveChecked = document.getElementById('positive-number').checked
+  negativeChecked = document.getElementById('negative-number').checked
 
 const randomNumber = Math.floor(Math.random() * 9) + 1 
 
-  if (alwaysOnButtonChecked == true) {
+  if (positiveChecked == true) {
     document.getElementById("number-answer").innerHTML = randomNumber
   } else {
     document.getElementById("number-answer").innerHTML = (randomNumber * -1)

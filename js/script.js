@@ -2,15 +2,14 @@
 //
 // Created by: Apr 2024
 // This file contains the JS functions for index.html
+const randomNumber = Math.floor(Math.random() * 9) + 1 
 
 function myButtonClicked() {
-  alwaysOnButtonChecked = document.getElementById('on-check').checked
+  alwaysOnButtonChecked = document.getElementById('positive-number').checked
 
   if (alwaysOnButtonChecked == true) {
-    document.getElementById("radio-button-value").innerHTML =
-      "<p>Value is: On</p>"
+    document.getElementById("number-answer").innerHTML = randomNumber
   } else {
-    document.getElementById("radio-button-value").innerHTML =
-      "<p>Value is: Off</p>"
+    document.getElementById("number-answer").innerHTML = (randomNumber * -1)
   }
 }

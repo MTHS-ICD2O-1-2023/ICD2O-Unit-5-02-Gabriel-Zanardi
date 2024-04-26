@@ -2,10 +2,11 @@
 //
 // Created by: Apr 2024
 // This file contains the JS functions for index.html
-const randomNumber = Math.floor(Math.random() * 9) + 1 
 
 function myButtonClicked() {
   alwaysOnButtonChecked = document.getElementById('positive-number').checked
+
+const randomNumber = Math.floor(Math.random() * 9) + 1 
 
   if (alwaysOnButtonChecked == true) {
     document.getElementById("number-answer").innerHTML = randomNumber

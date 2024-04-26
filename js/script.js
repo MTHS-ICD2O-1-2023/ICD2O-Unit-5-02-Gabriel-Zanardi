@@ -7,7 +7,7 @@ function myButtonClicked() {
   positiveChecked = document.getElementById('positive-number').checked
   negativeChecked = document.getElementById('negative-number').checked
 
-const randomNumber = Math.floor(Math.random() * 9) + 1 
+const randomNumber = Math.floor(Math.random() * 99) + 1 
 
   if (positiveChecked == true) {
     document.getElementById("number-answer").innerHTML = randomNumber

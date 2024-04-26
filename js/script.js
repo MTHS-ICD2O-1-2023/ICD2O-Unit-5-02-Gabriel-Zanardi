@@ -5,18 +5,13 @@
 
 const randomNumber = Math.floor(Math.random()) 
 
-/**
- * This function checks if thge user has selected the random number from above
- */
-
 function myButtonClicked() {
-  alwaysOnButtonChecked = document.getElementById('on-check').checked
+ alwaysOnButtonChecked = document.getElementById('on-check').checked
 
   if (alwaysOnButtonChecked == true) {
-    document.getElementById("positive-option").innerHTML =
-      "<p>Value is: On</p>"
+    document.getElementById("random-number").innerHTML = "<p>Value is: " + randomNumber + "</p>";
+
   } else {
-    document.getElementById("negative-option").innerHTML =
-      "<p>Value is: Off</p>"
+    document.getElementById("random-number").innerHTML = "<p>Value is: " + randomNumber + "</p>";
   }
 }

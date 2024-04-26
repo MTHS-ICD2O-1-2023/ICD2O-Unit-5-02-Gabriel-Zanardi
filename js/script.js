@@ -3,24 +3,20 @@
 // Created by: Apr 2024
 // This file contains the JS functions for index.html
 
-const randomNumber = Math.floor(Math.random() * 6) + 1
+const randomNumber = Math.floor(Math.random()) 
 
 /**
  * This function checks if thge user has selected the random number from above
  */
 
 function myButtonClicked() {
-  // input
-  const userNumber = parseInt(document.getElementById("rng-guess").value)
+  alwaysOnButtonChecked = document.getElementById('on-check').checked
 
-  //process
-  if (userNumber == randomNumber) {
-    // output
-    document.getElementById("rng-answer").innerHTML = "You have guessed the correct number"
-  }
-
-  if (userNumber != randomNumber) {
-    // output
-    document.getElementById("rng-answer").innerHTML = "You have guessed the wrong number"
+  if (alwaysOnButtonChecked == true) {
+    document.getElementById("positive-option").innerHTML =
+      "<p>Value is: On</p>"
+  } else {
+    document.getElementById("negative-option").innerHTML =
+      "<p>Value is: Off</p>"
   }
 }

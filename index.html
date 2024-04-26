@@ -16,47 +16,40 @@
   <link rel="manifest" href="site.webmanifest" />
   <title>Positive and negative RNG in JS</title>
 </head>
-<body>
-  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-  <script src="./js/script.js"></script>
-  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-    <header class="mdl-layout__header">
-      <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Positive and negative RNG in JS</span>
-      </div>
-    </header>
-    <main class="mdl-layout__content">
-      <div class="right-image">
-        <img src="./images/Fahrenheit to Celsius.jpg" height="200" width="150" alt="temperature converter image" />
-      </div>
-      <div class="page-content">
-       Choose an option for a random number to be generated 
-      </div>
-      <br />
-      <!-- Simple Textfield for integers-->
-      <form action="#">
-        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-1">
-          <input type="radio" id="positive-option" class="mdl-radio__button" name="options" value="1" checked>
-          <span class="mdl-radio__label">Positive</span>
-        </label>
-        <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="option-2">
-          <input type="radio" id="negative-option" class="mdl-radio__button" name="options" value="2">
-          <span class="mdl-radio__label">Negative</span>
-        </label>
-  </div>
-  <div class="child page-content-answer">
-    <div id="random-number"></div>
-  </div>
-  </div>
-  </form>
-  <br />
-  <!-- Accent-colored raised button with ripple -->
-  <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-    onclick="myButtonClicked()">
-    Generate
-  </button>
-  <br />
-  </main>
-  </div>
-</body>
-</html>
+  <body>
+    <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+    <script src="./js/script.js"></script>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+      <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Radio Button Program</span>
+        </div>
+      </header>
+      <main class="mdl-layout__content">
+        <p></p>
+        <img id="right-image" src="./images/notebook-animation.svg" alt="Computer" width="25%" height="25%">
+        <p></p>
+        <div id="radio-button-value">
+          <p>?</p>
+        </div>
+        <div id="radio-buttons">
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="on-check">
+            <input checked class="mdl-radio__button" id="on-check" name="radio-check" type="radio" value="on">
+            <span class="mdl-radio__label">Always on</span>
+          </label>
+          <label class="mdl-radio mdl-js-radio mdl-js-ripple-effect" for="off-check">
+            <input class="mdl-radio__button" id="off-check" name="radio-check" type="radio" value="off">
+            <span class="mdl-radio__label">Always off</span>
+          </label>
+        </div>
+        <div>
+          <!-- Raised button with ripple -->
+          <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+            onclick="myButtonClicked()">
+            Show Value
+          </button>
+        </div>
+      </main>
+    </div>
+  </body>
+  </html>
